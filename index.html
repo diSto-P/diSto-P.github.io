@@ -105,7 +105,7 @@ Nach einiger Diskussion über Richtig und Falsch schlug Tilda letztlich vor, das
 Und diese Fallbesprechung ist für heute geplant! Und du bist dazu eingeladen, weil du dich in letzter Zeit so viel um Hr. Wagner gekümmert hast. Wie Spannend!
 
 
-[[Zur Fallbesprechung gehen|FallbesprechungStart]]</tw-passagedata><tw-passagedata pid="3" name="FallbesprechungStart" tags="" position="1750,2600" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Aufgabe:
+[[Zur Fallbesprechung gehen|FallbesprechungStartx]]</tw-passagedata><tw-passagedata pid="3" name="FallbesprechungStart" tags="" position="1750,2600" size="100,100">&lt;div class=&quot;text-box&quot;&gt;Aufgabe:
 Die ethische Falldiskussion soll sich an der Nimwegener Methode orientieren, mache dich zunächst mit dem Vorgehen vertraut
 &lt;/div&gt;
 
@@ -151,7 +151,10 @@ Hier arbeitest du seit einem Monat. Auf deinem Wohnbereich wohnen derzeit vier B
 (if: $arkensteincomplete is not 1) [[Story Nr. 3: Palliativer Notfall bei Hr. Arkenstein]]
 (if: $ottcomplete is not 1) [[Story Nr. 4: Hr. Ott hat Schmerzen]]
 
-</tw-passagedata><tw-passagedata pid="5" name="Story Nr. 3: Palliativer Notfall bei Hr. Arkenstein" tags="" position="1800,2000" size="100,100"></tw-passagedata><tw-passagedata pid="6" name="Story Nr. 2: Fr. Mandura liegt im Sterben" tags="" position="3250,2525" size="100,100">Du betritts das Zimmer von Fr. Mandura. Die schmächtige Frau hat ein Mamma-Karzinom mit cerebraler Metastasierung im Endstadium. Seit ein Paar Tagen ist sie soporös und oft nur noch kurzzeitig erweckbar. Es ist abzusehen, dass sie zeitnah versterben wird, was ihr und ihren Angehörigen auch bewusst ist. Fr. Mandura hat lebensverlängernde Maßnahmen abgelehnt. Ihre Hausärztin hat vorausschauend 10mg Morphin s.c. bei auftretenden Beschwerden angesetzt. 
+</tw-passagedata><tw-passagedata pid="5" name="Story Nr. 3: Palliativer Notfall bei Hr. Arkenstein" tags="" position="1800,2000" size="100,100">Hier wird noch gebaut!
+&lt;img src=&quot;https://th.bing.com/th/id/OIG2.GPVSZku0Z3CdTXsnfv5R?pid=ImgGn&quot;
+(set: $arkensteinsolved to 1)
+zurück zum [[Start der Story]]</tw-passagedata><tw-passagedata pid="6" name="Story Nr. 2: Fr. Mandura liegt im Sterben" tags="" position="3250,2525" size="100,100">Du betritts das Zimmer von Fr. Mandura. Die schmächtige Frau hat ein Mamma-Karzinom mit cerebraler Metastasierung im Endstadium. Seit ein Paar Tagen ist sie soporös und oft nur noch kurzzeitig erweckbar. Es ist abzusehen, dass sie zeitnah versterben wird, was ihr und ihren Angehörigen auch bewusst ist. Fr. Mandura hat lebensverlängernde Maßnahmen abgelehnt. Ihre Hausärztin hat vorausschauend 10mg Morphin s.c. bei auftretenden Beschwerden angesetzt. 
 
 &lt;img src=&quot;https://th.bing.com/th/id/OIG3.oIxmt6dBE2awKf0EKDos?pid=ImgGn&quot;
 
@@ -533,18 +536,25 @@ Wenn du mit deinem Text fertig bist klicke auf [[fertig]]. Auch wenn noch andere
 (If: $Obstipation is 0)[[Du klärst über die erhöhte Gefahr einer Obstipation auf]]</tw-passagedata><tw-passagedata pid="54" name="&quot;//Ich nehm das Zeug//“" tags="" position="5400,1600" size="100,100">(set: $ottcomplete to 1)Du bringst Hr. Ott umgehend seine erste Gabe Morphin (Mit ein paar Tropfen Haldol gegen die Übelkeit ;)). In der Folge hält er erstmal ein Nickerchen. Kurz vor Ende deines Dienstes triffst du Hr. Ott dann auf dem Flur mit dem &quot;Vorturner&quot;. Stolz berichtet er wie gut er heute mitarbeiten kann: &quot;//Und alles schmerzfrei!//&quot;
 Durch deine gute Pflege wird Hr. Ott in seiner verbleibenden Lebenszeit weitesgehend mobil und unabhängig bleiben. Die Schmerzfreiheit ermöglicht es ihm aktiv am Leben im Pflegeheim teilzunehmen.
 Ein Jahr später wird Hr. Ott ohne Schmerzem versterben. Er hat sein letztes Jahr genossen.
+(set: $ottibu to 1)
 &lt;img src=&quot;https://th.bing.com/th/id/OIG.LNUCSZ2A5qzlsloD3bb6?pid=ImgGn&quot;&gt;
 
 (if: $wagnercomplete is not 1) [[Story Nr. 1: Herr Wagner will keine künstliche Ernährung]]
 (if: $manduracomplete is not 1) [[Story Nr. 2: Fr. Mandura liegt im Sterben]]
 (if: $arkensteincomplete is not 1) [[Story Nr. 3: Palliativer Notfall bei Hr. Arkenstein]]
 (if: $ottcomplete is not 1) [[Story Nr. 4: Hr. Ott hat Schmerzen]]</tw-passagedata><tw-passagedata pid="55" name="&quot;//Ich bleibe lieber bei dem Ibuprofen//&quot;" tags="" position="5400,1400" size="100,100">(set: $ottcomplete to 1)Hr. Ott dreht sich in seinem Bett auf die andere Seite. Er hat sich entschieden die Schmerzen zu ertragen. Durch die starken Schmerzen lehnt er die Mobilisation häufig ab. Dies erhöht das Risiko für Thrombosen, beschleunigt seinen körperlichen Verfall und verringert seine Lebensqualität. Im Wohnbereich zieht er sich immer weiter zurück und verbringt die meiste Zeit in seinem Zimmer. Nach 3 Monaten verstirbt Hr. Ott schließlich unter Schmerzen.
+(set: $ottmorphin to 1)
 &lt;img src=&quot;https://th.bing.com/th/id/OIG.5TYuHHIuPSrzQjWt66Jw?w=1024&amp;h=1024&amp;rs=1&amp;pid=ImgDetMain&quot;&gt;
 
 (if: $wagnercomplete is not 1) [[Story Nr. 1: Herr Wagner will keine künstliche Ernährung]]
 (if: $manduracomplete is not 1) [[Story Nr. 2: Fr. Mandura liegt im Sterben]]
 (if: $arkensteincomplete is not 1) [[Story Nr. 3: Palliativer Notfall bei Hr. Arkenstein]]
-(if: $ottcomplete is not 1) [[Story Nr. 4: Hr. Ott hat Schmerzen]]</tw-passagedata></tw-storydata>
+(if: $ottcomplete is not 1) [[Story Nr. 4: Hr. Ott hat Schmerzen]]
+
+</tw-passagedata><tw-passagedata pid="56" name="FallbesprechungStartx" tags="" position="2025,2625" size="100,100">Hier wird noch gebaut!
+&lt;img src=&quot;https://th.bing.com/th/id/OIG2.GPVSZku0Z3CdTXsnfv5R?pid=ImgGn&quot;
+(set: $wagnersolved to 1)
+zurück zum [[Start der Story]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
